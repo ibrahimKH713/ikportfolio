@@ -255,7 +255,7 @@ ul {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 .nav-link {
@@ -404,35 +404,6 @@ ul {
   background-color: var(--bg-card);
 }
 
-.profile-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1.5rem;
-  color: var(--text-muted);
-  border: 2px dashed var(--border-color);
-}
-
-.profile-placeholder svg {
-  width: 64px;
-  height: 64px;
-  stroke: var(--color-accent);
-  margin-bottom: 0.75rem;
-}
-
-.profile-placeholder span {
-  font-weight: 600;
-  color: var(--text-main);
-  font-size: 0.95rem;
-}
-
-.profile-placeholder small {
-  font-size: 0.8rem;
-  margin-top: 0.25rem;
-}
-
 /* ==========================================================================
    7. ABOUT SECTION
    ========================================================================== */
@@ -575,7 +546,7 @@ ul {
   height: 14px;
   border-radius: 50%;
   background-color: var(--color-accent);
-  border: 3px solid var(--bg-alt);
+  border: 3px solid var(--bg-main);
 }
 
 .timeline-content {
@@ -742,14 +713,20 @@ ul {
   padding: 0.4rem 0.9rem;
   border-radius: 50px;
   background-color: var(--bg-alt);
-  border: 1px dashed var(--color-accent);
-  color: var(--text-muted);
+  border: 1px solid var(--color-accent);
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.social-pill:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
 }
 
 .footer {
   border-top: 1px solid var(--border-color);
   padding: 2rem 1.5rem;
-  background-color: var(--bg-alt);
+  background-color: var(--bg-main);
 }
 
 .footer-content {
@@ -777,7 +754,91 @@ ul {
 }
 
 /* ==========================================================================
-   14. MOBILE RESPONSIVENESS
+   14. SERVICES SECTION
+   ========================================================================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-bottom: 4px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-bottom-color: var(--color-accent);
+}
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background-color: var(--color-accent-soft);
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.service-title {
+  font-size: 1.2rem;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.service-list {
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  flex-grow: 1;
+}
+
+.service-list li {
+  font-size: 0.88rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.service-list li::before {
+  content: "✓";
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.service-cta {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: auto;
+}
+
+.service-cta:hover {
+  color: var(--color-accent);
+}
+
+/* ==========================================================================
+   15. MOBILE RESPONSIVENESS
    ========================================================================== */
 @media (max-width: 860px) {
   .hero-grid {
