@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- UTF-8 encoding ensures full support for English, Urdu, and Arabic characters -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Ibrahim Khan | Portfolio</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans (English) & Noto Naskh Arabic / Noto Nastaliq Urdu for RTL support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= STICKY NAVIGATION ================= -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">M Ibrahim <span>Khan</span></a>
+
+            <nav class="nav-Menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Dark / Light Mode Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+                    <span class="theme-icon" id="theme-icon">🌙</span>
+                </button>
+
+                <!-- Mobile Hamburger Button -->
+                <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= HOME (HERO) SECTION ================= -->
+        <section id="home" class="hero section">
+            <div class="container hero-grid">
+
+                <!-- Hero Text Content -->
+                <div class="hero-content reveal">
+                    <span class="badge">📍 Islamabad, Pakistan</span>
+                    <h1 class="hero-title">M Ibrahim Khan</h1>
+                    <h2 class="hero-subtitle">
+                        Assistant Manager &amp; Faculty Assistant <span class="gold-divider">|</span> MS Software Engineering Student
+                    </h2>
+                    <p class="hero-summary">
+                        Specializing in university administration, executive office management, academic research, AI-driven workflows, and Arabic &amp; Islamic instruction.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <!-- PLACEHOLDER: Replace 'YOUR_CV_FILE.pdf' with the actual path to your CV PDF -->
+                        <a href="YOUR_CV_FILE.pdf" class="btn btn-outline" download>
+                            📄 Download CV <span class="placeholder-tag">(Placeholder)</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Image (Auto-detects your image filename from your folder) -->
+                <div class="hero-image-wrapper reveal">
+                    <div class="profile-frame">
+                        <img src="portfolio.png.png"
+                             alt="M Ibrahim Khan"
+                             class="profile-img"
+                             onerror="
+                             const fallbacks=['portfolio.png', 'porfolio.jpg' , 'porfolio.jpeg' , 'profile.jpg' , 'profile.png' ];
+                             const next=fallbacks.shift();
+                             if (!this.dataset.idx) this.dataset.idx=0;
+                             const list=['portfolio.png', 'porfolio.jpg' , 'porfolio.jpeg' , 'profile.jpg' , 'profile.png' ];
+                             if (this.dataset.idx < list.length) {
+                        this.src = list[this.dataset.idx++];
+                        }
+                        "
+                        >
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about" class="section bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Introduction</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-card reveal">
+                    <p class="about-bio">
+                        I am a highly focused Assistant Manager and MS Software Engineering student with extensive experience in university administration, executive office management, and event coordination. I specialize in academic research, advanced document processing, and integrating AI tools to optimize workflow efficiency. In addition to administrative work, I am an experienced instructor proficient in teaching Arabic grammar (Nahw, Sarf, Balaghat), basic Arabic, English language, and Quranic studies.
+                    </p>
+
+                    <div class="about-meta-grid">
+                        <div class="meta-item">
+                            <span class="meta-label">Name</span>
+                            <span class="meta-value">M Ibrahim Khan</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Location</span>
+                            <span class="meta-value">Islamabad, Pakistan</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Email</span>
+                            <span class="meta-value"><a href="mailto:ikk232165@gmail.com">ikk232165@gmail.com</a></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Phone / WhatsApp</span>
+                            <span class="meta-value"><a href="tel:03096273783">03096273783</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE SECTION ================= -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Career Path</span>
+                    <h2 class="section-title">Work Experience</h2>
+                </div>
+
+                <div class="experience-card reveal">
+                    <div class="exp-header">
+                        <div>
+                            <h3 class="exp-role">Assistant Manager &amp; Faculty Assistant</h3>
+                            <p class="exp-org">Kanzul Madaris Board &amp; Dar-ul-Madina International University (DMIU), Islamabad</p>
+                        </div>
+                        <span class="exp-badge">Current Role</span>
+                    </div>
+
+                    <div class="exp-grid">
+                        <div class="exp-item">
+                            <h4>Executive &amp; Dean's Office Support</h4>
+                            <p>Assist the Dean of the Faculty of Humanities &amp; Social Sciences in daily academic and administrative operations. Draft official notifications, letters, and executive reports for the Pro-VC office.</p>
+                        </div>
+
+                        <div class="exp-item">
+                            <h4>Event Management &amp; Seminar Coordination</h4>
+                            <p>Organize university seminars and workshops. Record Minutes of Meetings (MoM), write official event reports, and compile photographic evidence for compliance.</p>
+                        </div>
+
+                        <div class="exp-item">
+                            <h4>Accreditation Support (NACTE)</h4>
+                            <p>Prepare files, letters, and documentation for university accreditation under NACTE.</p>
+                        </div>
+
+                        <div class="exp-item">
+                            <h4>Document Processing &amp; AI Workflows</h4>
+                            <p>Manage high-level office documentation, translate English PDFs to Urdu with RTL alignment, and use AI tools for administrative productivity and research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EDUCATION SECTION ================= -->
+        <section id="education" class="section bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Academic Background</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">3rd Semester</span>
+                            <h3 class="timeline-title">MS in Software Engineering (MSSE)</h3>
+                            <p class="timeline-inst">International Islamic University Islamabad (IIUI)</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">Completed</span>
+                            <h3 class="timeline-title">Bachelor of Science in Computer Science (BSCS)</h3>
+                            <p class="timeline-inst">Computer Science Degree</p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">8th Year</span>
+                            <h3 class="timeline-title">Dars-e-Nizami (Islamic Studies &amp; Arabic Language)</h3>
+                            <p class="timeline-inst">Jamia tul Madina, G-11 Markaz, Islamabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Core Competencies</span>
+                    <h2 class="section-title">Skills &amp; Expertise</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill 1 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">📚</div>
+                        <h3>Academic &amp; General Research</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Literature Gathering</span>
+                            <span class="tag">Topic Breakdown</span>
+                            <span class="tag">Formal Writing</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">📄</div>
+                        <h3>Document Processing</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Administrative Records</span>
+                            <span class="tag">Layout Formatting</span>
+                            <span class="tag">English-to-Urdu Translation (RTL Accuracy)</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">🤖</div>
+                        <h3>AI Integration &amp; Teaching</h3>
+                        <div class="skill-tags">
+                            <span class="tag">AI Workflow Automation</span>
+                            <span class="tag">Teaching AI Fundamentals</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">🎓</div>
+                        <h3>Teaching &amp; Instruction</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Arabic Grammar (Nahw, Sarf, Balaghat)</span>
+                            <span class="tag">English Language</span>
+                            <span class="tag">Arabic Language</span>
+                            <span class="tag">Quranic Studies</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5 -->
+                    <div class="skill-card reveal">
+                        <div class="skill-icon">🤝</div>
+                        <h3>Soft Skills</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Executive Communication</span>
+                            <span class="tag">Time Management</span>
+                            <span class="tag">Focus</span>
+                            <span class="tag">Event Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <div class="project-badge">Web Application</div>
+                        <h3 class="project-title">Online Hardwood and Carpet Store</h3>
+                        <p class="project-desc">
+                            A specialized web application project designed for browsing and ordering hardwood flooring and carpet products online.
+                        </p>
+                        <div class="project-footer">
+                            <!-- PLACEHOLDER: Replace '#' with your live project link or GitHub repo later -->
+                            <a href="#" class="btn btn-outline btn-sm placeholder-link" aria-disabled="true">
+                                🔗 Project Link (Placeholder - Replace Later)
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+
+                <div class="contact-box reveal">
+                    <p class="contact-intro">
+                        Available for academic collaboration, executive administration inquiries, research projects, and educational instruction in Islamabad or remotely.
+                    </p>
+
+                    <!-- Direct Contact Buttons -->
+                    <div class="contact-cta-group">
+                        <!-- WhatsApp Link (Formatted with Pakistan country code +92 for 03096273783) -->
+                        <a href="https://wa.me/923096273783" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                            💬 Chat on WhatsApp (03096273783)
+                        </a>
+                        <!-- Direct Email Link -->
+                        <a href="mailto:ikk232165@gmail.com" class="btn btn-primary">
+                            ✉️ Send Email (ikk232165@gmail.com)
+                        </a>
+                    </div>
+
+                    <!-- Optional Social Placeholders -->
+                    <div class="social-placeholders">
+                        <p class="placeholder-note">Optional Profile Links (Placeholders — update URLs in <code>index.html</code>):</p>
+                        <div class="social-links">
+                            <!-- PLACEHOLDER: Replace '#' with your actual LinkedIn and GitHub URLs -->
+                            <a href="#" class="social-pill placeholder-link">LinkedIn (Placeholder)</a>
+                            <a href="#" class="social-pill placeholder-link">GitHub (Placeholder)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="current-year"></span> M Ibrahim Khan. All rights reserved.</p>
+            <p class="footer-loc">Islamabad, Pakistan</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
